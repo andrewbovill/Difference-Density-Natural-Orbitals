@@ -38,10 +38,10 @@
       implicit none 
       character(len = 512) :: str1, str2, str3
       character,intent(in) :: filename
-      integer, intent(in) :: Spin
+      integer,intent(in) :: Spin, IUnit
+      integer,intent(out) :: NElectrons
       logical :: found = .false.
-      integer,intent(out):: NElectrons
-      integer :: io, IUnit
+      integer :: io
 
 1000  format (A61)
 

@@ -5,22 +5,17 @@
 !     an excited state calculation
 !
 !     -A. J. Bovill, 2022
-!
-!     Excitation number was proposed by Peter M. W. Gill to 
-!     represent the number of electrons in the excited state that lie 
-!     in the unoccupied space of the ground state
-!     "Excitation Number: Characterizing Mutiply Excited States"
-!     DOI: 10.1021/acs.jctc.7B00963
+
 !
 !     USE Connections
-
+!
       use DDNO_Mod
 !
 !     Variable Declarations
 !
       implicit none 
-!     First file  filename_GS is Ground state
-!     Second file filename_EX is Excited state
+
+      integer(kind=int64) :: nCom
       character(len=512) :: filename_GS, filename_EX
       integer :: N_Electrons_GS, N_Electrons_GS_Alpha, N_Electrons_GS_Beta 
       integer :: N_Electrons_EX, N_Electrons_EX_Alpha, N_Electrons_EX_Beta 
